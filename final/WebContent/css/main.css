@@ -1,0 +1,701 @@
+/*!
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+ 
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+/*top navi 바로아래 홈 나오는 부분 */
+
+.page-rotation {
+    width: 1250px;
+    min-height: 50px;
+    margin: 0 auto;
+    padding: 10px 0 0;
+    text-align: left;
+   
+}
+
+.page-rotation a {
+    display: block;
+    float: left;
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* 가운데 슬라이드 이미지 부분 */
+
+.center {
+   width : 1200px;
+   position: relative;
+   margin-left : auto;
+   margin-right : auto;
+   margin-top : 12px;
+}
+
+.cycle-slideshow, .cycle-slideshow * 
+{ -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+.cycle-slideshow {
+  width:740px;
+  min-width: 200px;
+  max-width: 1200px;
+  height: 300px;
+  padding: 0;
+  position: relative;
+  float : left;
+  }
+.cycle-slideshow div.slide { width: 100%; height: 100% }
+.cycle-slideshow img { 
+    /* 
+    some of these styles will be set by the plugin (by default) but setting them here
+    helps avoid flash-of-unstyled-content
+    */
+    position: absolute; top: 0; left: 0;
+    width: 100%; padding: 0; display: block;
+}
+/* in case script does not load */
+.cycle-slideshow img:first-child {
+    position: static; z-index: 100;
+}
+.cycle-pager { 
+    text-align: center; width: 100%; z-index: 500; position: absolute; bottom: 2px; overflow: hidden;
+}
+.cycle-pager span { 
+    font-family: arial; font-size: 50px; width: 16px; height: 16px; 
+    display: inline-block; color: #ddd; cursor: pointer; 
+}
+.cycle-pager span.cycle-pager-active { color: #D69746;}
+.cycle-pager > * { cursor: pointer;}
+
+
+/*
+로그인
+*/
+    .wrapper { 
+    width:100%; 
+    height:100%; 
+    background-image:url(로그인창사진7.PNG); 
+    background-position:100%;
+    }
+    
+    .main {
+    /*  padding-top:200px; */
+     }
+   .login_box {
+      width:380px;
+      height:280px; 
+      background-color:white; 
+      margin-left:68%; 
+      margin-top:0px;
+      margin-bottom:-7px; 
+     /*  padding:0px 50px 3px 150px; */
+      /* opacity:0.6; */
+      border-radius:5px;
+   }
+   .login_box .input_login {
+         border-bottom: 2px solid #c4c5c4; 
+         padding: 20px 0 9px 0;
+         }
+   .login_box .input_login input { 
+      width: 100%; 
+      color: #828180; 
+      font-size: 15px; 
+      font-family:'돋움'; 
+      border:none;
+    }
+   
+    .login_box .check { 
+       color: balck; 
+       font-size: 15px; 
+       padding: 9px 0 15px 0;
+    }
+   
+   .login_box .login input {  
+      width:100%; height:55px;
+      background-color:#003468; 
+      color: white; 
+      font-size:15px; 
+      padding:17px 0 16px; 
+      border:0; 
+      cursor:pointer; 
+      font-family:'돋움';
+   }
+   .login_box .input_box input {  
+      width:100%; height:55px;
+      background-color:#003468; 
+      color: white; 
+      font-size:15px; 
+      margin-top:10px;
+      padding:17px 0 16px; 
+      border:0; 
+      cursor:pointer; 
+      font-family:'돋움';
+   }
+   
+    .infocheck {
+      margin-left: 830px;
+    
+    } 
+   
+   .infocheck input {
+   margin-left: 20px;
+   font-size: 15px;
+   width:180px;
+   height:30px;
+   -moz-box-shadow:inset 0px 1px 0px 0px #134d80;
+   -webkit-box-shadow:inset 0px 1px 0px 0px #134d80;
+   box-shadow:inset 0px 1px 0px 0px #134d80;
+   
+   background:-moz-linear-gradient(top, #024f78 5%, #003c61 100%);
+   background:-webkit-linear-gradient(top, #024f78 5%, #003c61 100%);
+   background:-o-linear-gradient(top, #024f78 5%, #003c61 100%);
+   background:-ms-linear-gradient(top, #024f78 5%, #003c61 100%);
+   background:linear-gradient(to bottom, #024f78 5%, #003c61 100%);
+   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#024f78', endColorstr='#003c61',GradientType=0);
+   background-color:#024f78;
+   -moz-border-radius:3px;
+   -webkit-border-radius:3px;
+   border-radius:3px;
+   border:1px solid #144b70;
+   display:inline-block;
+   cursor:pointer;
+   color:#ffffff;
+   font-family:Arial;
+   text-decoration:none;
+   text-shadow:0px 1px 0px #0d3054;
+   
+
+   }
+#134d80
+/*로그인 됬을시*/
+
+ .login_letter {
+ font-size: 28px;
+ text-shadow: 0 0 10px #666;
+ color: #fff;
+ margin: 0 ;
+ padding-left: 1020px;
+ width: 600px;
+ text-transform:uppercase;
+ font-family: "맑은 고딕";
+ font-style: italic;
+
+}
+
+.login_form {
+ width: 400px;
+ height: 235px;
+ margin-left: 800px;
+ margin-top: 20px;
+ padding-bottom: -20px;
+ 
+
+ }
+
+.form2 {
+ width: 380px;
+ min-width: 320px;
+ height: 200px;
+ margin: 60px auto;
+ margin-left:20px;
+
+}
+
+.form3 {
+ float: left;
+ /*   background:#f00;  */
+
+}
+
+.form3 label {
+ width: 100px;
+ height: 20px;
+ /*  display: block; */
+ float: left;
+ font-size: 20px;
+ font-family: "맑은 고딕";
+    
+ color:#5E5E5E;
+}
+.form3 input {
+   width:160px;
+   height:20px;
+   
+   
+}
+
+.form4  {
+  width: 270px;
+  float: left;
+  padding-left:50px;
+}
+.login_form1 {
+ width: 400px;
+ height: 235px;
+ border-radius: 25px;
+ border: 5px double #999;
+ margin-left: 1000px;
+ margin-top: 20px;
+ padding-bottom: -20px;
+ background-image: url(/final/image/로그인화면1.PNG);
+
+ }
+
+.form21 {
+ width: 380px;
+ min-width: 320px;
+ height: 200px;
+ margin: 20px auto;
+
+
+}
+
+.form31 {
+ float: left;
+ /*   background:#f00;  */
+
+}
+.pimage{
+   width:80px;
+   height: 70px;
+   background-image: url(/final/image/프로필이미지1.PNG);
+   float: left;
+   margin-right:25px;
+   margin-left: 15px;
+   
+}
+
+.form31 label {
+ width: 100px;
+ height: 20px;
+ /*  display: block; */
+ float: left;
+ font-size: 20px;
+ font-family: "맑은 고딕";
+    
+ color:#5E5E5E;
+}
+.form31 input {
+   width:160px;
+   height:20px;
+   
+   
+}
+
+.form41  {
+  width: 270px;
+  float: left;
+  margin-left:70px;
+  margin-top: 12px;
+ 
+  
+}
+.login_m {
+    float: left;
+    margin-top: 50px;
+    font-size: 16px;
+   
+     font-family: "맑은 고딕";
+    font-style: italic;
+    color: #828282;
+}
+
+
+
+
+/* 아래 내용 부분 */
+
+.main_html {
+  /*   font-size: 10px; */
+    -webkit-tap-highlight-color: transparent;
+      font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+
+div {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+
+.main_html {
+    /* width: 100%; */
+        margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Noto Sans KR", "Helvetica Neue", "Apple SD Gothic Neo", Helvetica, Arial, "Apple Gothic", �룍��, Dotum, sans-serif;
+}
+
+#contents {
+    position: relative;
+    width: 1200px;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 70px;
+    margin-left: auto;
+    padding: 20px 0 0;
+}
+
+#contents.main .conts-container {
+    margin-top: 70px;
+}
+
+#contents .contents-wrap {
+    position: relative;
+}
+
+.conts-box-list .inner-box {
+    position: relative;
+    width: 100%;
+}
+
+.conts-container .bigHeader {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    line-height: 37px;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    border-bottom: 3px solid #303a50;
+}
+
+.plan-contents:nth-child(1), .plan-contents:nth-child(4), .plan-contents:nth-child(7) {
+    margin: 10px 0;
+}
+
+.plan-contents {
+    position: relative;
+    float: left;
+    width: 390px;
+    height: 150px;
+    margin: 10px 0 10px 15px;
+}
+
+.plan-contents a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+        background-color: transparent;
+}
+
+.plan-contents .cover-img {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: url(https://www.wishbeen.co.kr/images/wb_base_cover.jpg) 0 0/100% 100% no-repeat;
+}
+img {
+    border: 0;
+}
+
+.plan-contents .cover-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: top;
+}
+
+.plan-contents .cover-img .cover-bg {
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.3);
+    z-index: 4;
+}
+
+.plan-contents .cover-img .tit {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding: 45px 20px 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    z-index: 5;
+}
+
+.plan-contents .cover-img .tit p {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.plan-contents .cover-img .tit .desc {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.plan-contents .cover-img .tit .desc span {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    padding: 0 10px;
+    max-width: 110px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.plan-contents .cover-img .tit .desc span::before {
+    display: block;
+    content: "";
+    width: 2px;
+    height: 2px;
+    position: absolute;
+    top: 11px;
+    right: 0;
+    background: #fff;
+}
+
+.btn-box.center {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.btn-box .btn-more {
+    display: inline-block;
+    padding: 0 35px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #333;
+}
+
+.btn-box .btn-more span {
+    color: #ff8000;
+}
+
+/*레이어 로그인창*/
+
+  .logotle {
+     width: 337px; height:100px; background-image:url(/final/image/로그인로고2.png);   
+  }
+
+  .imagelogo {
+     width:337px; he1ght:100px; 
+  }
+  
+  .login_box1 {
+      width:337px; height:515px; padding-top:15px;
+       
+      border-radius:5px;
+        margin: auto;
+        background-color: white;
+        padding-left: 50px;
+        padding-right: 50px;
+        
+  }
+  .input_tle {
+  width:250px; height:150px;  margin: auto;
+   
+  }
+   
+  .layer_trigger {
+   list-style: none;
+   display: inline;
+   font-weight: bold;
+   padding: 5px;
+   height: 50px;
+   background: none;
+   margin-top: -25.6px;
+   
+   opacity: 0.7;
+   filter:alpha (opacity=50); /*IE8 earlier */
+   padding-top: 15px;
+   padding-left: 0px;
+   float: left;
+   padding-bottom: 30px;
+  } 
+  
+   .layer_trigger_idfind {
+   list-style: none;
+   display: inline;
+   font-weight: bold;
+   padding: 5px;
+   height: 50px;
+   background: none;
+   margin-top: -25.6px;
+   
+   opacity: 0.7;
+   filter:alpha (opacity=50); /*IE8 earlier */
+   padding-top: 15px;
+   padding-left: 0px;
+   float: left;
+   padding-bottom: 30px;
+  } 
+   
+   
+   .login_box1 .input_login1 { width:250px; margin:auto; margin-top: 10px;  border-bottom: 2px solid #c4c5c4; padding: 20px 0 3px 0; }
+   .login_box1 .input_login1 input { width: 250px; height:30px; margin:auto; color: #828180; font-size: 15px; font-family:'돋움'; border:none;}
+    .login_box1 .check1 { color: balck; font-size: 14px; padding: 9px 0 15px 0;}
+   .login_box1 .login1 input {  
+      width:100%; height:55px; background-color:#00a6de; 
+      color: white; 
+      font-size:16px; 
+      padding:17px 0 16px; 
+      border:0; 
+      cursor:pointer; 
+      font-family:'돋움';
+   }
+   .login_box1 .input_box1 input {  
+      width:100%; height:55px;
+      background-color:#BC2424; 
+      color: white; 
+      font-size:16px; 
+      margin-top:40px;
+      padding:17px 0 16px; 
+      border:0; 
+      cursor:pointer; 
+      font-family:'돋움';
+
+   }
+/*로그인*/
+
+.page.logged_box {
+    
+}
+
+.wraplogged {
+    background: white;
+    border: 5px double #e4e4e4;
+    padding: 35px 25px 35px 10px;
+    widht:700px;
+    height: 200px;
+    
+    
+}
+
+#loginp{
+     float: left;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-top: 7px;
+    background-image: url(/final/image/프로필이미지1.PNG);   
+}
+
+.logged_user_img{
+    float: left;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-top: 7px;
+}  
+
+.logged_left {
+    float: left;
+    width: 720px;
+    height: 100%;
+    margin-left: 80px;
+    margin-bottom: -100px;
+    margin-top: -70px;
+}
+
+.logged_name {
+    font-size: 20px;
+    color: #555555;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.clear {
+    clear: both;
+}
+
+.logged_cnt_box {
+    display: block;
+    float: left;
+    text-align: center;
+    min-width: 46px;
+}
+
+.logged_btn_form {
+   width: 300px;
+   height: 300px;
+   
+   
+}
+
+.logged_line {
+    float: left;
+    width: 1px;
+    height: 30px;
+    background: #dbdbdb;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.logged_btn {
+    float: left;
+    text-align: center;
+    display: inline-block;
+      margin-left: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+    color: #555555;
+     font-weight: bold;
+  
+    
+    
+}
+#logged_control {
+   margin-left: 22px;
+}
+
+#mypage_btn_ico {
+   
+}
+
+.logged_btn_ico {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #b3b3b3;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}   
+
+/*레이어 부분*/
+.mw_layer{display:none;position:fixed;_position:absolute;top:0;left:0;z-index:10000;width:100%;height:100%}
+.mw_layer.open{display:block}
+.mw_layer .bg{position:absolute;top:0;left:0;width:100%;height:100%;background:#000;opacity:.5;filter:alpha(opacity=50)}
+#layer{position:absolute;top:50%;left:50%;width:400px;margin:-150px 0 0 -194px;padding:28px 28px 0 28px;line-height:normal;white-space:normal}
+
+
+
+
+

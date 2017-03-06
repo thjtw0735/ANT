@@ -1,0 +1,280 @@
+/*!
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+ 
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+/* 페이지 로테이션 부분 */
+
+.page-rotation {
+    width: 1250px;
+    min-height: 50px;
+    margin: 0 auto;
+    padding: 10px 0 0;
+    text-align: left;
+    border-bottom: 3px solid #eee;
+}
+
+.page-rotation a {
+    display: block;
+    float: left;
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.page-rotation span {
+    float: left;
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0 8px;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+/* 스토리부분 */
+.present .conts-box-list {
+	margin : auto;
+    width: 1240px;
+}
+
+.recommend-sch {
+    /* display: block; */
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.conts-box-list ul {
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+}
+
+.conts-box-list li {
+    position: relative;
+    width: 400px;
+    float: left;
+    margin: 0 0 20px 10px;
+    background: #fff;
+}
+
+.conts-box-list .trav-sch {
+    position: relative;
+    width: 100%;
+    background: #fff;
+    height: 250px;
+    border: 1px solid #eee;
+}
+
+
+.conts-box-list li a {
+    text-decoration: none;
+    position: static;
+    color: #fff;
+}
+
+.conts-box-list .trav-sch .cover-img {
+    position: relative;
+    width: 100%;
+    height: 182px;
+    overflow: hidden;
+    margin-top : -11px;
+}
+.conts-box-list .trav-sch .cover-img img {
+    width: 100%;
+    min-height: 180px;
+    vertical-align: top;
+    position: absolute;
+}
+
+.conts-box-list .trav-sch .cover-img .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.2)!important;
+}
+
+.conts-box-list .trav-sch .plan-tit {
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 90%;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.conts-box-list .trav-sch .plan-tit h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    overflow: hidden;
+    height: auto;
+    max-height: 60px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    background: 0 0;
+}
+
+
+.conts-box-list .trav-sch .plan-tit .countries-day-term span {
+    display: inline-block;
+    position: relative;
+    max-width: 50%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 7px 0 5px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.conts-box-list .trav-sch .plan-tit .countries-day-term span::before {
+    position: absolute;
+    top: 9px;
+    right: 0;
+    display: block;
+    content: "";
+    width: 2px;
+    height: 2px;
+    background: #fff;
+}
+
+
+.conts-box-list .trav-sch .list-contents {
+    height: 70px;
+    padding: 10px;
+}
+
+.conts-box-list .trav-sch .list-contents .tit {
+    line-height: 1.5;
+    padding-bottom: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.conts-box-list .trav-sch .list-contents .desc {
+    max-height: 60px;
+    line-height: 1.5;
+    font-size: 14px;
+    color: #666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+}
+
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+
+
+.clear {
+    clear: both;
+}
+
+
+.city .paging {
+    margin-top: 40px;
+}
+
+.city .present {
+    position: relative;
+    overflow: hidden;
+    margin-bottom : 20px;
+}
+
+.paging {
+    width: 840px;
+    position: relative;
+    margin-left: 200px;
+}
+
+.paging a.btn-prev {
+    left: 0;
+    color: #333;
+    border: 1px solid #333;
+}
+
+.paging a.btn-next {
+    right: 0;
+    color: #333;
+    border: 1px solid #333;
+}
+
+.paging a.btn-next, .paging a.btn-prev {
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.paging a {
+    font-size: 14px;
+}
+
+.paging ul {
+    width: 85%;
+    padding: 0 50px 0 265px;
+    text-align: center;
+    margin-bottom : 60px;
+}
+
+.paging li {
+    display: inline-block;
+    width: 40px;
+    text-align: center;
+    margin: 10px;
+}
+
+.paging li a {
+    display: block;
+    height: 25px;
+    color: #303a50;
+}
+
+.paging li.cover{
+    border-radius: 2px;
+    border: 1px solid #ff8000;
+    padding-bottom: 0px;
+    margin-top: 4px;
+    padding-top: 6px;
+}
+
+.conts-container {
+	margin-left
+}
+

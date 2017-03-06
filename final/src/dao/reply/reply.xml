@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="Reply">
+	<!-- 여기다가 sql 문 작성 -->
+	<insert id="insertReply" parameterType="dao.reply.ReplyDataBean" >
+		insert into Ant_Reply( reply_num , schedule_num , reply_id , reply_content ,reply_date) values(seq_reply_increment.NEXTVAL,#{schedule_num},#{reply_id}, #{reply_content}, sysdate )
+	</insert> 
+	
+	<select id="getReplyList" parameterType="int" resultType="dao.reply.ReplyDataBean">
+		select * from (select r.reply_num, r.schedule_num, r.reply_id, r.reply_content, r.reply_date, m.pimage from Ant_reply r, ant_member m where m.id=r.reply_id ) where schedule_num=#{schedule_num} order by reply_num desc
+	</select>
+	
+	<select id="getReplyMaxNum" parameterType="int" resultType="int">
+		select max(reply_num) from Ant_reply where schedule_num=#{schedule_num}
+	</select>
+	
+	<select id="getReplyNum" parameterType="int" resultType="int">
+		select count(*) from Ant_reply where schedule_num=#{schedule_num}
+	</select>
+
+	<select id="getMatchingReplyNum" parameterType="String" resultType="int">
+		select max(reply_num) from ant_reply where schedule_num in(select schedule_num from ant_matching where id=#{memId})
+	</select>
+	
+	
+	<delete id="deleteReply" parameterType="int">
+		delete from ant_reply where reply_num=#{reply_num}
+	</delete>
+	
+	<select id="getReplyCount" parameterType="String" resultType="int">
+		select count(*) from ant_reply where schedule_num in(select schedule_num from ant_matching where id=#{memId})
+	</select>
+	
+	<select id="getReplyAlarmList" parameterType="Map" resultType="dao.reply.ReplyDataBean">
+		<!-- select reply_num, schedule_num, reply_id, reply_content,
+		reply_date, story_num, tmp1, tmp2, r from
+		(select reply_num, schedule_num, reply_id, reply_content,
+		reply_date, story_num, tmp1, tmp2, rownum r from
+		(select * from Ant_Reply order by reply_num desc) order by reply_num desc)
+		where r &gt;= #{a} and r &lt;= #{b} and schedule_num in(select schedule_num from ant_matching where id=#{id}) order by reply_num desc -->
+		select * from(select m.id, s.schedule_num, s.schedule_subject, a.reply_num, a.reply_content , a.reply_id, a.reply_date, rownum r
+     from ant_matching m, ant_schedule s, ant_reply a where m.schedule_num = s.schedule_num and s.schedule_num = a.schedule_num
+     and m.id=#{id} order by reply_num asc ) where r &gt;= #{a} and r &lt;= #{b} order by reply_num desc
+	</select>
+	
+	<select id="getPImage" parameterType="String" resultType="dao.reply.ReplyDataBean">
+		select * from ant_member m, ant_reply r where m.id =r.reply_id and reply_id=#{id}
+	</select>
+	
+</mapper>

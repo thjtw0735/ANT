@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="Admin">
+	<!-- 여기다가 sql 문 작성 -->
+	<!-- 
+	ex)<select id="checkId" parameterType="String" resultType="Int">
+  			select count(*) from member where id=#{id}
+  	   </select>
+	-->
+</mapper>

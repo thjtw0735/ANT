@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="Schedule">
+	<!-- 여기다가 sql 문 작성 -->
+	<insert id="insertSchedule" parameterType="dao.schedule.ScheduleDataBean">
+		insert into Ant_Schedule(schedule_num, schedule_subject, schedule_content, schedule_start, schedule_end, schedule_spotnum ,schedule_spot)
+		values (#{schedule_num}, #{schedule_subject}, #{schedule_content}, #{schedule_start}, #{schedule_end}, #{schedule_spotnum}, #{schedule_spot})
+	</insert>
+	
+	<select id="getIdSchedule"  parameterType="int" resultType="dao.schedule.ScheduleDataBean">
+		select * from Ant_Schedule where schedule_num = #{schedule_num}
+	</select>
+	
+	<select id="getDefault" resultType="dao.schedule.ScheduleDataBean">
+		select schedule_num, schedule_subject, schedule_content, schedule_start,
+		schedule_stay, schedule_spotnum, schedule_spot, tmp1, tmp2, r from
+		(select schedule_num, schedule_subject, schedule_content, schedule_start,
+		schedule_stay, schedule_spotnum, schedule_spot, tmp1, tmp2, rownum r from
+		(select * from Ant_Schedule order by schedule_num desc) order by schedule_num desc)
+		order by schedule_num desc
+	</select>
+	
+	<select id="getScheduleMP" parameterType="String" resultType="dao.schedule.ScheduleDataBean">
+		select * from ant_schedule where schedule_num in(select schedule_num
+		 from ant_matching where id=#{id})
+		order by schedule_num desc
+	</select>
+	
+	<select id="getSchedule" parameterType="Map" resultType="dao.schedule.ScheduleDataBean">
+		select schedule_num, schedule_subject, schedule_content, schedule_start,
+		schedule_stay, schedule_spotnum, schedule_spot, tmp1, tmp2, r from
+		(select schedule_num, schedule_subject, schedule_content, schedule_start,
+		schedule_stay, schedule_spotnum, schedule_spot, tmp1, tmp2, rownum r from
+		(select * from Ant_Schedule order by schedule_num desc) order by schedule_num desc)
+		where r &gt;= #{a} and r &lt;= #{b} order by schedule_num desc
+	</select>
+	
+	<select id="getSearch" parameterType="Map" resultType="dao.schedule.ScheduleDataBean">
+		select schedule_num, schedule_subject, schedule_content, schedule_start,
+		schedule_stay, schedule_spotnum, schedule_spot, tmp1, tmp2, r from
+		(select schedule_num, schedule_subject, schedule_content, schedule_start,
+		schedule_stay, schedule_spotnum, schedule_spot, tmp1, tmp2, rownum r from
+		(select * from Ant_Schedule where schedule_subject like '%' || #{word} || '%' order by schedule_num desc) order by schedule_num desc)
+		where r &gt;= #{a} and r &lt;= #{b} order by schedule_num desc
+	</select>
+	
+	<select id="getSearchMain" parameterType="Map" resultType="dao.schedule.ScheduleDataBean">
+		select schedule_num, schedule_subject, schedule_content, schedule_start,
+		schedule_stay, schedule_spotnum, schedule_spot, tmp1, tmp2, r from
+		(select schedule_num, schedule_subject, schedule_content, schedule_start,
+		schedule_stay, schedule_spotnum, schedule_spot, tmp1, tmp2, rownum r from
+		(select * from Ant_Schedule where schedule_subject like '%' || #{word} || '%' order by schedule_num desc) order by schedule_num desc)
+		order by schedule_num desc
+	</select>
+	
+	<select id="getCount" resultType="int">
+		select count(*) from Ant_Schedule
+	</select>
+	
+	<select id="getMaxCount" resultType="int">
+		select max(schedule_num) from Ant_Schedule
+	</select>
+	
+	<select id="getResultCount" parameterType="Map" resultType="int">
+		select count(*) from Ant_Schedule where schedule_subject like '%' || #{word} || '%'
+	</select>
+	
+	<update id="modifySchedule" parameterType="dao.schedule.ScheduleDataBean">
+		update ant_schedule set schedule_subject=#{schedule_subject}, schedule_content=#{schedule_content}, schedule_start=#{schedule_start}, 
+		schedule_end=#{schedule_end}, schedule_spotnum=#{schedule_spotnum} where schedule_num=#{schedule_num}
+	</update>
+	
+	<select id="getMouseOverSchedule" parameterType="string" resultType="dao.schedule.ScheduleDataBean">
+		select * from ant_schedule where schedule_subject like '%' || #{title} || '%'
+	</select>
+</mapper>

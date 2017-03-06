@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="Story">
+	<insert id="insertStory" parameterType="dao.story.StoryDataBean">
+		insert into ant_story (story_num, schedule_num, story_subject, story_content) 
+		values (seq_story_increment.NEXTVAL, #{schedule_num}, #{story_subject}, #{story_content})
+	</insert>
+	
+	<select id="getStory" parameterType="int" resultType="dao.story.StoryDataBean">
+		select * from ant_story where schedule_num=#{schedule_num}
+	</select>
+	
+	<select id="getResultCount" parameterType="Map" resultType="int">
+		select count(*) from Ant_Story where story_subject like '%' || #{word} || '%'
+	</select>
+	
+	<delete id="deleteStory">
+		delete from ant_story where schedule_num=#{schedule_num}
+	</delete>
+	
+	<select id="getCount" resultType="int">
+		select count(*) from Ant_Story
+	</select>
+	
+	
+	<select id="getSearchStory" parameterType="Map" resultType="dao.story.StoryDataBean">
+		select story_num, schedule_num, story_subject, story_content,
+		TMP1, TMP2, r from
+		(select story_num, schedule_num, story_subject, story_content,
+		TMP1, TMP2, rownum r from
+		(select * from Ant_Story order by story_num desc) order by story_num desc)
+		where r &gt;= #{a} and r &lt;= #{b} order by story_num desc
+	</select>
+	
+	<select id="getSearch" parameterType="Map" resultType="dao.story.StoryDataBean">
+		select STORY_NUM, SCHEDULE_NUM, STORY_SUBJECT, STORY_CONTENT,
+		tmp1, tmp2, r from
+		(select  STORY_NUM, SCHEDULE_NUM, STORY_SUBJECT, STORY_CONTENT, tmp1, tmp2, rownum r from
+		(select * from Ant_Story where Story_subject like '%' || #{word} || '%' order by Story_num desc) order by Story_num desc)
+		where r &gt;= #{a} and r &lt;= #{b} order by Story_num desc
+	</select>
+	
+	<select id="getDefault" resultType="dao.story.StoryDataBean">
+		select story_num, schedule_num, story_subject, story_content,
+		TMP1, TMP2, r from
+		(select story_num, schedule_num, story_subject, story_content,
+		TMP1, TMP2, rownum r from
+		(select * from Ant_Story order by story_num desc) order by story_num desc) order by story_num desc
+	</select>
+	
+	<select id="getStoryMain" parameterType="Map" resultType="dao.story.StoryDataBean">
+		select STORY_NUM, SCHEDULE_NUM, STORY_SUBJECT, STORY_CONTENT,
+		tmp1, tmp2, r from
+		(select  STORY_NUM, SCHEDULE_NUM, STORY_SUBJECT, STORY_CONTENT, tmp1, tmp2, rownum r from
+		(select * from Ant_Story where Story_subject like '%' || #{word} || '%' order by Story_num desc) order by Story_num desc) order by Story_num desc
+	</select>
+	
+</mapper>

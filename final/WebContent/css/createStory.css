@@ -1,0 +1,19 @@
+
+
+#storysubject {
+	margin-left: 41%;
+}
+#storytitle {
+	font-size:40px;
+	font-style: bold;
+	margin:10px;
+}
+
+.pnecil {
+	margin-left: 10px;
+}
+
+.postItem {
+	border: 1px solid gray;
+	width:800px;
+}

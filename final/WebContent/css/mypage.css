@@ -1,0 +1,351 @@
+/* 마이페이지 중간 메뉴부분 */
+
+body{
+	/* line-height : 0; */	
+}
+
+
+
+
+
+#contents {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto 70px;
+    padding: 20px 0 0;
+}
+
+.mypage {
+    overflow: hidden;
+}
+
+.present .tabs-list {
+	margin-top : 7px;
+	margin-left : -40px;
+    float: left;
+    width: 165px;
+}
+
+.present .tabs-list li {
+    width: 100%;
+    float: none;
+    font-weight: 500;
+    background: #ddd;
+}
+
+.present .tabs-list li a {
+    display: block;
+    color: #333;
+    padding: 0 0 0 30px;
+    border-bottom: 1px solid #eee;
+    text-decoration: none;
+    font-weight : bold;
+}
+
+.tabs-list li a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 15px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.present .tabs-list li a:hover{
+    color: #ff8000;
+}
+
+/* .present .tabs-list li a.active span:hover {
+    display: inline-block;
+    height: 50px;
+    border-bottom: 3px solid #ff8000;
+}
+ */
+
+
+
+/* 마이페이지 일정부분 */
+
+#contents.main .conts-container {
+    margin-top: 70px;
+}
+
+.sum {
+	margin-left : 200px;
+	margin-right : 40px;
+}
+
+.conts-box-list .inner-box {
+    position: relative;
+    width: 100%;
+    margin-left : 20px;
+}
+
+.conts-container .bigHeader {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    line-height: 37px;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    border-bottom: 3px solid #303a50;
+}
+
+.plan-contents:nth-child(1), .plan-contents:nth-child(4), .plan-contents:nth-child(7) {
+    margin: 10px 0;
+}
+
+.plan-contents {
+    position: relative;
+    float: left;
+    width: 390px;
+    height: 150px;
+    margin: 10px 0 10px 60px;
+}
+
+.plan-contents a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+        background-color: transparent;
+}
+
+.plan-contents .cover-img {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: url(https://www.wishbeen.co.kr/images/wb_base_cover.jpg) 0 0/100% 100% no-repeat;
+}
+img {
+    border: 0;
+}
+
+.plan-contents .cover-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: top;
+}
+
+.plan-contents .cover-img .cover-bg {
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.3);
+    z-index: 4;
+}
+
+.plan-contents .cover-img .tit {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding: 45px 20px 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    z-index: 5;
+}
+
+.plan-contents .cover-img .tit p {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.plan-contents .cover-img .tit .desc {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.plan-contents .cover-img .tit .desc span {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    padding: 0 10px;
+    max-width: 110px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.plan-contents .cover-img .tit .desc span::before {
+    display: block;
+    content: "";
+    width: 2px;
+    height: 2px;
+    position: absolute;
+    top: 11px;
+    right: 0;
+    background: #fff;
+}
+
+
+/* 페이지 로테이션 */
+
+.page-rotation {
+    width: 1250px;
+    min-height: 50px;
+    margin: 0 auto;
+    padding: 10px 0 0;
+    text-align: left;
+    border-bottom: 3px solid #eee;
+}
+
+.page-rotation a {
+    display: block;
+    float: left;
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.page-rotation span {
+    float: left;
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0 8px;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+/* 마이페이지 */
+
+	.bg-1 { 
+	      background-color: #1abc9c; /* Green */
+	      color: #ffffff;
+	}
+	.bg-2 { 
+	      background-color: #474e5d; /* Dark Blue */
+	      color: #ffffff;
+	}
+	.bg-3 { 
+	      background-color: #fff; /* White */
+	      color: #555555;
+	}
+	.take{
+	  		float : left;
+	  		width : 100px;
+  			height : 100px;
+	}
+	.col-sm-3{
+	  	float : right;
+	}
+	.aside{
+	  	float : left;
+	}
+	
+	.editbtn{
+		algin : right;
+	}
+		
+	.btn-success1 {
+	  color: #fff;
+	  background-color: #5cb85c;
+	  border-color: #4cae4c;
+	  float : right;
+	}
+	.btn-success1:focus,
+	.btn-success1.focus {
+	  color: #fff;
+	  background-color: #449d44;
+	  border-color: #255625;
+	}
+	.btn-success1:hover {
+	  color: #fff;
+	  background-color: #449d44;
+	  border-color: #398439;
+	}
+	.btn-success1:active,
+	.btn-success1.active,
+	.open > .dropdown-toggle.btn-success1 {
+	  color: #fff;
+	  background-color: #449d44;
+	  border-color: #398439;
+	}
+	.btn-success1:active:hover,
+	.btn-success1.active:hover,
+	.open > .dropdown-toggle.btn-success1:hover,
+	.btn-success1:active:focus,
+	.btn-success1.active:focus,
+	.open > .dropdown-toggle.btn-success1:focus,
+	.btn-success1:active.focus,
+	.btn-success1.active.focus,
+	.open > .dropdown-toggle.btn-success1.focus {
+	  color: #fff;
+	  background-color: #398439;
+	  border-color: #255625;
+	}
+	.btn-success1:active,
+	.btn-success1.active,
+	.open > .dropdown-toggle.btn-success1 {
+	  background-image: none;
+	}
+	.btn-success1.disabled:hover,
+	.btn-success1[disabled]:hover,
+	fieldset[disabled] .btn-success1:hover,
+	.btn-success1.disabled:focus,
+	.btn-success1[disabled]:focus,
+	fieldset[disabled] .btn-success1:focus,
+	.btn-success1.disabled.focus,
+	.btn-success1[disabled].focus,
+	fieldset[disabled] .btn-success1.focus {
+	  background-color: #5cb85c;
+	  border-color: #4cae4c;
+	}
+	.btn-success1.badge {
+	  color: #5cb85c;
+	  background-color: #fff;
+	}
+		
+	#bimgTest {
+		width: 100%;
+		height: 100%;
+	}
+	.bimgTest {
+		width: 100%;
+		height: 100%;
+	}
+	
+	.img-circle{
+		border: solid; 
+		border-radius:50%; 
+	}
+	.idposition{
+		height:30px;
+	}

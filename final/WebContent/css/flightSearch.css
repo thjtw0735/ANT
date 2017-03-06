@@ -1,0 +1,128 @@
+.ht_search_box {
+    border-radius: 3px;
+    background: #37414a;
+    background: rgba(44, 61, 77, 0.68);
+    width: 950px;
+     
+    height: 77px;
+    margin-top: 58px;
+    padding: 20px;
+   	margin-left : auto;
+   	margin-right : auto;
+    height: 63px;
+    clear: none;
+    
+    /* display: inline-block; */
+}
+
+#select {
+	width: 100px;
+    height: 40px;
+    line-height: 37px;
+    font-size: 14px;
+    color: #808080;
+    border: 1px solid #c8c8ca;
+    padding-left: 10px;
+    background-position: 98% center;
+    margin-right: 10px;
+    margin-left: 75px;
+    margin-top: 10px;
+    float: left;
+}
+
+#select1 {
+	width: 70px;
+    height: 40px;
+    line-height: 37px;
+    font-size: 14px;
+    color: #808080;
+    border: 1px solid #c8c8ca;
+    padding-left: 10px;
+    background-position: 98% center;
+    margin-right: 10px;
+    margin-top: 10px;
+    float: left;
+}
+.ht_search_box #count {
+	width: 70spx;
+    height: 40px;
+    line-height: 37px;
+    font-size: 14px;
+    color: #808080;
+    border: 1px solid #c8c8ca;
+    padding-left: 10px;
+    background-position: 98% center;
+   	margin-left: -28px;
+   	margin-right: 8px;
+    margin-top: 10px;
+    float: left;
+}
+
+#seat {
+	width: 150px;
+    height: 40px;
+    line-height: 37px;
+    font-size: 14px;
+    color: #808080;
+    border: 1px solid #c8c8ca;
+    padding-left: 10px;
+    background-position: 98% center;
+    margin-right: 10px;
+    margin-top: 10px;
+    float: left;
+}
+
+
+.date_box input {
+	
+	width: 150px;
+    height: 40px;
+    line-height: 37px;
+    font-size: 14px;
+    color: #808080;
+    border: 1px solid #c8c8ca;
+    padding-left: 10px;
+    background-position: 98% center;
+    margin-right: 10px;
+    margin-top: 10px;
+	float: left;	
+}
+
+
+
+.flight input {
+    text-align:left;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    width: 60px;
+    height: 39px;
+  	background: #ff9320;
+    border: 1px solid #f7870f;
+    cursor: pointer;
+    float: left;
+	background-image: url(/final/image/버튼.PNG);
+}
+#flight_img {
+	
+}
+
+
+.search_d{
+   
+   width: 360px;
+    margin: 29px 20px 20px 20px;
+}
+
+
+.search_fd{
+   
+   width: 20px;
+   border: 1px solid red;
+}
+
+.date_box{
+   
+   width: 350px;
+    margin-right: 20px;
+}

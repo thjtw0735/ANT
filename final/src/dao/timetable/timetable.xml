@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="Timetable">
+	<!-- 여기다가 sql 문 작성 -->
+	<!-- 
+	ex)<select id="checkId" parameterType="String" resultType="Int">
+  			select count(*) from member where id=#{id}
+  	   </select>
+	-->
+	<insert id="insertTimetable" parameterType="dao.timetable.TimetableDataBean">
+		insert into Ant_Timetable(timetable_index , timetable_date, timetable_time, timetable_content, timetable_title, timetable_address, schedule_num )
+		values (seq_timetable_increment.NEXTVAL , #{timetable_date}, #{timetable_time}, #{timetable_content}, #{timetable_title}, #{timetable_address}, #{schedule_num})
+	</insert>
+	
+	<select id="getTimetable" parameterType="int" resultType="dao.timetable.TimetableDataBean">
+		select * from Ant_Timetable where schedule_num = #{schedule_num}
+	</select>
+	
+	<delete id="deleteTimetable" parameterType="int">
+		delete from ant_timetable where schedule_num = #{schedule_num}
+	</delete>
+</mapper>

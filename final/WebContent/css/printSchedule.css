@@ -1,0 +1,77 @@
+div{
+	margin:0 auto;
+	text-align: center;
+	/*border:1px solid gray;;*/
+	width: 53%;
+}
+#backImage {
+	border: none;
+	width:28%;
+
+}
+.img-circle{
+      border: solid; 
+      border-radius:50%; 
+     
+}
+   
+#baseInformation {
+	border: 1px solid gray;
+	margin-top:150px;
+	color: black;
+	height: 900px;
+}
+#base_id {
+	font-size: 20px;
+	text-align: center;
+	
+}
+#sub_and_con {
+	margin-top: 30%;
+	text-align: center;
+}
+#schedule_subject {
+	font-size: 50px;
+	width: 100%;
+	text-align: center;
+}
+
+#schedule_content {
+	font-size: 30px;
+	width: 100%;
+	text-align: center;
+}
+
+.content {
+	margin-left: auto;
+	text-align: center;
+	
+}
+#printMap {
+	float: none;
+	margin: 20px;
+	
+
+}
+.subject {
+	border: 1px solid gray;
+	height: 1000px;
+	width: 1040px;
+}
+.content {
+	border: 1px solid gray;
+	width: 450px;
+	height: 500px;
+	padding: 10px;
+	float: left;
+	margin: 10px;
+}
+#qrcodeimg {
+	margin-top: 30px;
+}
+#position {
+	font-size: 15px;
+}
+.qrcodeimg {
+	float: left;
+}

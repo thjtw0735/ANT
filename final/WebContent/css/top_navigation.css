@@ -1,0 +1,203 @@
+body{
+   font-family: arial, sans-serif;
+   line-height : 1.29;
+}
+.ant_image {
+	float: left;
+    margin-right: 20px;
+    width: 130px;
+    height: 50px;
+    margin-top: -10px;
+}
+#nav{
+   width:100%;
+   height:250px;
+   /* background: url(/htmlTest/image/switzerland.jpg); */
+   background-size: cover;
+   position: relative;
+}
+#src_div {
+
+	float: left;
+}
+
+#nav_wrapper {
+   margin-left: auto;
+   margin-right: auto;
+   width: 1200px;
+   height: 80px;
+   font-size: 21px;
+   
+}
+#nav_wrapper ul{
+   height: 50px;
+
+   background: none;
+   margin-top: -10px;
+   opacity: 0.8;
+   filter:alpha (opacity=50); /*IE8 earlier */
+   padding-top: 15px;
+   padding-left: 0px;
+   float: left;
+}
+
+#nav_wrapper ul li{
+   list-style: none;
+   display: inline;
+   font-weight: bold;
+   padding: 5px;
+}
+#nav_wrapper a{
+   color: black;
+   text-decoration: none;
+   padding: 10px;
+}
+#nav_wrapper ul li:hover{
+   /* background: #02557d; */
+   color : #18b8e7;
+   transition:all 0.45s;
+   opacity: 0.3;
+   filter:alpha (opacity=90); /*IE8 earlier */
+}
+#nav_li {
+	color: #0000a0;
+	margin-left: 165px;
+	font-size: 15px;
+	
+}
+
+#nav_size{
+	font-size: 15px;
+}
+
+.search_str{
+   width: 200px;
+}
+.main_top {
+	width: 100%;
+	height: 350px;  
+	margin-left: auto;
+	margin-right: auto;  
+	
+}
+.wrap {
+    width: 1092px;
+    margin: 0 auto;
+    position: relative;
+}
+.main_top_title {
+    color: white;
+    font-size: 44px;
+    font-weight: bold;
+    text-align: center; 
+    padding-top: 50px;
+}
+.main_top_desc {
+    text-align: center;
+    padding-top: 20px; 
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+.search_area {
+    width: 645px;
+    height: 82px;
+    border-radius: 3px;
+    background: url(http://earthtory.com/res/img/component/bg/bgb_60.png) repeat;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 20px;
+    position: relative;
+}
+.search_input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    font-size: 20px;
+    color: #b3b3b3;
+    background: url(http://earthtory.com/res/img/area/area_search_ico.gif) no-repeat white;
+    background-position: center right;
+    margin-bottom: 10px;
+}
+
+.latest_search {
+	margin-top : 7px;
+	margin-left : 1px;
+    float: left;
+    font-size: 14px;
+    color: white;
+}
+
+.latest_a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/*레이어 로그인창*/
+
+  .logotle {
+  	width: 337px; height:100px; background-image:url(/final/image/로그인로고2.png);   
+  }
+
+  .imagelogo {
+  	width:337px; he1ght:100px; 
+  }
+  
+  .login_box1 {
+      width:337px; height:515px; padding-top:15px;
+   	 
+      border-radius:5px;
+   	  margin: auto;
+   	  background-color: white;
+   	  padding-left: 50px;
+   	  padding-right: 50px;
+   	  
+  }
+  .input_tle {
+  width:250px; height:150px;  margin: auto;
+   
+  }
+   
+  .layer_trigger {
+   list-style: none;
+   display: inline;
+   font-weight: bold;
+   padding: 5px;
+   height: 50px;
+   background: none;
+   margin-top: -25.6px;
+   
+   opacity: 0.7;
+   filter:alpha (opacity=50); /*IE8 earlier */
+   padding-top: 15px;
+   padding-left: 0px;
+   float: left;
+   padding-bottom: 30px;
+  } 
+   
+   
+   .login_box1 .input_login1 { width:250px; margin:auto; margin-top: 10px;  border-bottom: 2px solid #c4c5c4; padding: 20px 0 3px 0; }
+   .login_box1 .input_login1 input { width: 250px; height:30px; margin:auto; color: #828180; font-size: 15px; font-family:'돋움'; border:none;}
+    .login_box1 .check1 { color: balck; font-size: 14px; padding: 9px 0 15px 0;}
+   .login_box1 .login1 input {  
+      width:100%; height:55px; background-color:#00a6de; 
+      color: white; 
+      font-size:16px; 
+      padding:17px 0 16px; 
+      border:0; 
+      cursor:pointer; 
+      font-family:'돋움';
+   }
+   .login_box1 .input_box1 input {  
+      width:100%; height:55px; background-color:#BC2424; 
+      color: white; 
+      font-size:16px; 
+      margin-top:40px;
+      padding:17px 0 16px; 
+      border:0; 
+      cursor:pointer; 
+      font-family:'돋움';
+
+
+

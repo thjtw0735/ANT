@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="ScheduleImg">
+	<insert id="insertScheduleImg" parameterType="dao.scheduleImg.ScheduleImgDataBean">
+		insert into ant_scheduleImg (schedule_num, img) values (#{schedule_num}, #{img})
+	</insert>
+	<update id="updateScheduleImg" parameterType="dao.scheduleImg.ScheduleImgDataBean">
+		update ant_scheduleImg set img = #{img} where schedule_num = #{schedule_num}
+	</update>
+	
+</mapper>

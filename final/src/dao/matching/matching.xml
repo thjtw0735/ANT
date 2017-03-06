@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="Matching">
+	<insert id="setMatchingId" parameterType="dao.matching.MatchingDataBean">
+		insert into Ant_Matching (id, schedule_num) values (#{id}, seq_schedule_increment.NEXTVAL)
+	</insert>
+	
+	<select id="getSchedule_Num" parameterType="String" resultType="int">	
+		select schedule_num from (select schedule_num from Ant_Matching where id = #{id} order by schedule_num desc) where rownum='1'
+	</select>
+	
+	<select id="getId" parameterType="int" resultType="dao.member.MemberDataBean">
+		select * from Ant_member where id = (select id from Ant_matching where schedule_num=#{schedule_num})
+	</select>
+	
+	<select id="getSchedule_Num_Id" parameterType="int" resultType="string">
+		select id from ant_matching where schedule_num=#{schedule_num}
+	</select>
+	
+</mapper>

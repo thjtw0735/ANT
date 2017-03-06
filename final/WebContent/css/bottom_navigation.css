@@ -1,0 +1,104 @@
+/*!
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+ 
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+body{
+	margin : 0;
+}
+
+.et_mobile_full_box {
+    width: 100%;
+    height: 382px;
+    background: url(http://earthtory.com/res/img/main/et_mobile_bg.png);
+    background-size: 100% 382px;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/res/img/main/et_mobile_bg.png',sizingMethod='scale');
+    -ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/res/img/main/et_mobile_bg.png', sizingMethod='scale');
+}
+
+.et_mobile_demo {
+    position: absolute;
+    bottom: 0px;
+    left: 30px;
+    width: 474px;
+    height: 347px;
+}
+
+.et_mobile_title {
+    position: absolute;
+    color: #1a7ad9;
+    font-size: 24px;
+    font-weight: bold;
+    left: 554px;
+    top: 75px;
+}
+
+.et_mobile_sub_title {
+    position: absolute;
+    color: #545454;
+    font-size: 13px;
+    line-height: 17px;
+    left: 554px;
+    top: 112px;
+}
+
+
+
+#footer {
+    width: 100%;
+    height: 242px;
+    background: #363c48;
+    position: relative;
+    float: left;
+}
+
+.wrap {
+    width: 1092px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.footer_col {
+    width: 261px;
+    margin-right: 16px;
+}
+
+.fl {
+    float: left;
+}
+
+.footer_title {
+    width: 261px;
+    height: 19px;
+    border-bottom: solid 1px #424753;
+    margin-top: 30px;
+    color: #999999;
+    font-size: 13px;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.clear {
+    clear: both;
+}
+
+#footer a {
+    display: block;
+    color: #fff;
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+
+.footer_bottom {
+    width: 100%;
+    height: 40px;
+    background: #2e333d;
+    color: #c9c9c9;
+    line-height: 40px;
+    position: absolute;
+    bottom: 0px;
+    font-size: 11px;
+}
